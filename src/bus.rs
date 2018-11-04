@@ -33,10 +33,8 @@ impl UsbBus {
         // TODO: apb1.enr is not public, figure out how this should really interact with the HAL
         // crate
 
-        let _ = apb1;
         interrupt::free(|_| {
-            let dp = unsafe { ::stm32f103xx::Peripherals::steal() };
-            dp.RCC.apb1enr.modify(|_, w| w.usben().enabled());
+            apb1.enr().modify(|_, w| w.usben().enabled());
         });
 
         let bus = UsbBus {
