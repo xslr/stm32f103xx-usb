@@ -7,10 +7,9 @@ authors = ["Matti Virkkunen <mvirkkunen@gmail.com>"]
 bare-metal = "0.2.3"
 cortex-m = "0.5.4"
 stm32f103xx = "0.10.0"
-# TODO: this fork is used temporarily to be able to set USB clocks correctly in the examples
-stm32f103xx-hal = { git = "https://github.com/mvirkkunen/stm32f103xx-hal", rev = "71b5d90972abfcf66cd2fe4a9d4e28df2564abfb" }
+stm32f103xx-hal = { git = "git@github.com:xslr/stm32f103xx-hal.git", branch = "rcc-hse-usb-support" }
 vcell = "0.1.0"
-usb-device = { git = "https://github.com/mvirkkunen/usb-device", rev = "60db7e175e6dcea0b9c0f6b56564d1253bf0fd90" }
+usb-device = { git = "git@github.com:xslr/usb-device.git" }
 
 [dev-dependencies]
 cortex-m-rt = "0.5.2"
