@@ -7,9 +7,9 @@ authors = ["Matti Virkkunen <mvirkkunen@gmail.com>"]
 bare-metal = "0.2.3"
 cortex-m = "0.5.4"
 stm32f103xx = "0.10.0"
-stm32f103xx-hal = { git = "git@github.com:xslr/stm32f103xx-hal.git", branch = "rcc-hse-usb-support" }
+stm32f103xx-hal = { git = "https://github.com/xslr/stm32f103xx-hal.git", branch = "rcc-hse-usb-support" }
 vcell = "0.1.0"
-usb-device = { git = "git@github.com:xslr/usb-device.git" }
+usb-device = { git = "https://github.com/xslr/usb-device.git" }
 
 [dev-dependencies]
 cortex-m-rt = "0.5.2"
